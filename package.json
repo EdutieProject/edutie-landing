@@ -25,7 +25,8 @@
     "homepage": "https://github.com/OakHarbor/Starter-Kit-v4-Eleventy-#readme",
     "devDependencies": {
         "@11ty/eleventy": "^2.0.1",
-        "@11ty/eleventy-navigation": "^0.3.5"
+        "@11ty/eleventy-navigation": "^0.3.5",
+        "tailwindcss": "^3.3.5"
     },
     "dependencies": {
         "del-cli": "^5.0.0",
