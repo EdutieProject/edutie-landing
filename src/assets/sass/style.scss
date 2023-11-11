@@ -5,3 +5,47 @@ Main css file
 @tailwind components;
 @tailwind utilities;
 
+// hero gradient
+.hero-gradient {
+    background: #e3f89b;
+    background: -webkit-linear-gradient(121deg, #e3f89b 0%, #6fec0f 50%, #0f6804 100%);
+    background: linear-gradient(121deg, #e3f89b 0%, #6fec0f 50%, #0f6804 100%);
+}
+
+.separator{
+    position:relative;
+    padding-bottom:5.5%;
+    overflow:hidden;
+    &::after, &::before {
+        content:'';
+        position:absolute;
+        -webkit-backface-visibility:hidden;
+    }
+
+    &::before{
+        background: transparent;
+        bottom:100%; left:-1%;
+        width:101%; height:200%;
+        
+        -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        
+        -webkit-transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg);
+        transform: rotate(-3deg);    
+    }
+    &::after {
+        background: white;
+        top:100%;
+        width:115%; height:100%;
+        
+        -webkit-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
+        
+        -webkit-transform: rotate(-2.5deg);
+        -ms-transform: rotate(-2.5deg);
+        transform: rotate(-2.5deg);  
+    }
+}
