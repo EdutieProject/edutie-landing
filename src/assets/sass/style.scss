@@ -5,6 +5,11 @@ Main css file
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 // hero gradient
 .hero-gradient {
     background: #e3f89b;
@@ -12,6 +17,7 @@ Main css file
     background: linear-gradient(121deg, #e3f89b 0%, #6fec0f 50%, #0f6804 100%);
 }
 
+// separator 
 .separator{
     position:relative;
     padding-bottom:5.5%;
