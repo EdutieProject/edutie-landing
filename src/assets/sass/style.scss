@@ -5,16 +5,40 @@ Main css file
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+    font-family: "Baloo";
+    src: url("../fonts/baloo.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "Geologica";
+    src: url("../fonts/geologica.ttf") format("truetype");
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: Geologica;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Baloo;
+    letter-spacing: 0.1rem;
 }
 
 
 // hero gradient
 .hero-gradient {
-    background: #e3f89b;
-    background: -webkit-linear-gradient(121deg, #e3f89b 0%, #6fec0f 50%, #0f6804 100%);
-    background: linear-gradient(121deg, #e3f89b 0%, #6fec0f 50%, #0f6804 100%);
+    // background: #f5b410;
+    // background: -webkit-linear-gradient(25deg, #f5b410 0%, #f5b410 40%, #a462fa 100%);
+    // background: linear-gradient(25deg, #f5b410 0%, #f5b410 40%, #a462fa 100%);
+    background: #f5b410;
+    background: -webkit-linear-gradient(47deg, #f5b410 0%, #f5b410 30%, #58d400 100%);
+    background: linear-gradient(47deg, #f5b410 0%, #f5b410 30%, #58d400 100%);
+    background-attachment: fixed;
 }
 
 // separator 
