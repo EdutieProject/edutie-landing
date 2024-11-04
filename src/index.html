@@ -7,31 +7,6 @@ permalink: '/'
 
 {% extends "layouts/base.html" %}
 
-{% block head%}
-
-<link rel="stylesheet" href="/assets/css/style.css" />
-<!-- <link rel="stylesheet" href="/assets/css/output.css" /> -->
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Script for Netlify Identity -->
-<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script defer>
-  if (window.netlifyIdentity) {
-    window
-      .netlifyIdentity
-      .on('init', (user) => {
-        if (!user) {
-          window
-            .netlifyIdentity
-            .on('login', () => {
-              document.location.href = '/admin/';
-            });
-        }
-      });
-  }
-</script>
-
-{% endblock head %}
-
 {% block body %}
 
 
@@ -48,10 +23,10 @@ permalink: '/'
       <!-- Title -->
       <div class="relative flex flex-col items-center">
         <h1
-          class="absolute text-zinc-400 mb-6 max-w-3xl text-4xl font-bold md:mb-10 md:text-6xl lg:mb-12 mix-blend-color-burn text-center">
+          class="absolute text-emerald-400 mb-6 max-w-3xl text-4xl font-bold md:mb-10 md:text-6xl lg:mb-12 mix-blend-color-burn text-center">
           Nauka stworzona od nowa dla Ciebie</h1>
         <h1
-          class="width-100 text-stone-800 mb-6 max-w-3xl text-4xl font-bold md:mb-10 md:text-6xl lg:mb-12 opacity-90 translate-x-0.5 -translate-y-0.5 text-center">
+          class="width-100 text-stone-900 mb-6 max-w-3xl text-4xl font-bold md:mb-10 md:text-6xl lg:mb-12 opacity-70 translate-x-0.5 -translate-y-0.5 text-center">
           Nauka stworzona od nowa dla Ciebie</h1>
       </div>
       <!-- Subtitle -->
@@ -69,7 +44,7 @@ permalink: '/'
           <img src="assets/images/icons/antenna-svgrepo-com.svg" alt="" class="mr-2 max-h-6 w-6 scale-150" />
           <h6>Dołącz do Discorda</h6>
         </a>
-        <a href="#waitlist"
+        <a href="/closed-alpha"
           class="flex items-center justify-center border border-solid bg-amber-700 px-6 py-3 font-bold rounded-3xl tracking-wider text-white">
           <img src="assets/images/icons/rocket-svgrepo-com.svg" alt="" class="mr-2 max-h-6 w-6 scale-150" />
           <h6>Wejdź do Edutie</h6>
@@ -138,8 +113,8 @@ permalink: '/'
     <h2 class="text-center text-3xl font-bold md:text-5xl">Jak to działa</h2>
     <p class="mx-auto mb-8 mt-4 max-w-lg text-center text-sm text-gray-700 sm:text-base md:mb-12 lg:mb-16">
       Edutie oferuje innowacyjny proces nauczania online, który jest zarówno efektywny, jak i intuicyjny. Dzięki
-      personalizowanym materiałom, uczysz się szybciej i efektywniej, bez tracenia czasu na obsługę aplikacji czy
-      wyszukiwanie informacji.
+      personalizowanym materiałom, uczysz się szybciej i efektywniej, bez tracenia czasu na wyszukiwanie informacji
+      jak i powtarzanie tego co już dobrze potrafisz.
     </p>
     <!-- Content -->
     <div class="mx-auto grid max-w-xl gap-6">
@@ -329,7 +304,7 @@ permalink: '/'
       <!-- Title -->
       <h2 class="mb-4 text-3xl font-bold md:text-5xl">Pora na naukę.</h2>
       <p class="mx-auto mb-6 max-w-xl text-sm text-gray-700 sm:text-base md:mb-12">
-        Załóż konto i przygotuj się na naukę razem z Edutie
+        Załóż konto i rozpocznij swoją podróż do efektywnej nauki z Edutie - rozwijaj się razem z nami!
       </p>
       <!-- Form -->
       <div class="mx-auto mb-4 flex max-w-xl justify-center">
