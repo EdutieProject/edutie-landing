@@ -1,0 +1,80 @@
+---
+title: 'Edutie - e-learning przyszłości'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/closed-alpha'
+---
+
+{% extends "layouts/base.html" %}
+
+
+{% block body %}
+
+
+<!-- HERO -->
+
+<header id="hero">
+  <!-- Hero top -->
+  <div class="relative hero-gradient">
+
+    <!-- Container -->
+    <div class="mx-auto max-w-7xl px-5 pt-12 md:px-10 md:py-16 lg:pt-20 pb-6 flex flex-col items-center">
+      <!-- Title -->
+      <div class="relative flex flex-col items-center">
+        <h1
+          class="absolute text-cyan-400 mb-6 max-w-3xl text-4xl font-bold md:mb-10 md:text-6xl lg:mb-12 mix-blend-color-burn text-center">
+          Dołącz do wczesnej wersji</h1>
+        <h1
+          class="width-100 text-stone-800 mb-6 max-w-3xl text-4xl font-bold md:mb-10 md:text-6xl lg:mb-12 opacity-70 translate-x-0.5 -translate-y-0.5 text-center">
+          Dołącz do wczesnej wersji</h1>
+      </div>
+
+    </div>
+
+    <!-- separator -->
+    <div class="separator">
+    </div>
+
+  </div>
+</header>
+
+<section>
+  <!-- Container -->
+  <div class="px-5 md:px-10 md:py-8">
+    <div class="mx-auto w-full max-w-7xl px-4 py-16 text-center align-center">
+      <!-- Title -->
+      <p class="mx-auto mb-8 max-w-3xl flex-col md:mb-10 lg:mb-12">
+        Edutie jest w fazie zamkniętej wersji alpha i intensywnie rozwijamy ją, aby zapewnić najlepsze doświadczenia
+        użytkownikom. Dołącz do grona wczesnych użytkowników, aby mieć wpływ na rozwój aplikacji i uzyskać ekskluzywny
+        dostęp do nowych funkcji! Śledź nasze postępy na Discordzie, by być na bieżąco z aktualizacjami Edutie oraz
+        współtworzyć przyszłość personalizowanej nauki.
+      </p>
+      <ul class="mx-auto mb-8 flex flex-col items-center justify-center gap-5 sm:gap-8 md:gap-10 lg:mb-12">
+        <li class="flex items-center gap-4">
+          <img src="../../assets/images/icons/alarm-bell-svgrepo-com.svg"
+            alt="" class="mr-2 h-8 w-8 scale-150" />
+          <p class="text-sm sm:text-base">Ogłoszenia na temat aktualizacji aplikacji</p>
+        </li>
+        <li class="flex items-center gap-4">
+          <img src="../../assets/images/icons/urgent-message-svgrepo-com.svg"
+            alt="" class="mr-2 h-8 w-8 scale-150" />
+          <p class="text-sm sm:text-base">Kontakt z twórcami i członkami społeczności Edutie</p>
+        </li>
+        <li class="flex items-center gap-4">
+          <img src="../../assets/images/icons/magic-wand-svgrepo-com.svg"
+            alt="" class="mr-2 h-8 w-8 scale-150" />
+          <p class="text-sm sm:text-base">Współtworzenie projektu razem z zespołem</p>
+        </li>
+      </ul>
+      <div class="flex align-center justify-center">
+        <a href="https://discord.gg/UAYCpZXFAE"
+          class="flex items-center justify-center border border-solid bg-amber-700 px-6 py-3 font-bold rounded-3xl tracking-wider text-white">
+          <img src="../../assets/images/icons/antenna-white-svgrepo-com.svg" alt="" class="mr-2 max-h-6 w-6 scale-150" />
+          <h6>Dołącz do Discorda Edutie</h6>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock body %}

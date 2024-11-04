@@ -7,238 +7,312 @@ permalink: '/'
 
 {% extends "layouts/base.html" %}
 
-    {% block head%}
+{% block body %}
 
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/output.css" />
 
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
+<!-- HERO -->
+<header id="hero">
+  <!-- Hero top -->
+  <div class="relative hero-gradient">
 
-    {% endblock head %}
-
-    {% block body %}
-    
-
-    <!-- HERO -->
-    
-    
-
-    <header id="hero">
-        <!-- Hero top -->
-        <div class="relative hero-gradient">
-
-            <!-- Container -->
-            <div class="mx-auto max-w-7xl px-5 py-24 md:px-10 md:py-32 lg:py-40">
-                <!-- Title -->
-                <div class="relative">
-                    <h1 class="absolute text-zinc-700 mb-6 max-w-3xl text-4xl font-bold md:mb-10 md:text-6xl lg:mb-12 mix-blend-color-burn">Nauka stworzona od nowa dla Ciebie</h1>
-                    <h1 class="text-stone-800 mb-6 max-w-3xl text-4xl font-bold md:mb-10 md:text-6xl lg:mb-12 opacity-90 translate-x-0.5 -translate-y-0.5">Nauka stworzona od nowa dla Ciebie</h1>
-                </div>
-                <!-- Subtitle -->
-                <div class="relative">
-                    <h1 class="text-stone-800 mb-6 max-w-3xl text-lg font-semibold md:mb-10 md:text-xl lg:mb-12">Ucz się efektywniej z Edutie - platformą e-learningową, która elastycznie dostosowuje materiały i zadania specjalnie pod Ciebie.</h1>
-                </div>
-                <!-- Buttons -->
-                <div class="flex items-stretch">
-                <!-- <a href="#" class="mr-6 bg-black px-8 py-4 text-center font-semibold text-white lg:mr-8"> Przejdź do aplikacji</a> -->
-                <a href="#waitlist" class="flex items-center justify-center border border-solid border-black bg-white px-6 py-3 font-bold">
-                    <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a94d411e6cf99_Vector%20(6).svg" alt="" class="mr-2 max-h-4 w-5" />
-                    <p>Dołącz do Edutie</p>
-                </a>
-                </div>
-            </div>
-
-            
-        <!-- separator -->
-        <div class="separator">
-        </div>
-
-        </div>
-      </header>
-      
-
-    <!-- ============================================ -->
-    <!--                  Features                    -->
-    <!-- ============================================ -->
-
-    
-    <section id="features">
-        <!-- Container -->
-        <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
-        <!-- Title -->
-        <h2 class="items-center text-center text-3xl font-bold md:text-5xl">Ucz się zgodnie ze swoimi preferencjami</h2>
-        <p class="mx-auto mb-8 my-4 max-w-lg text-center text-sm text-[#636262] sm:text-base md:mb-12">
-            Proces nauczania powinien być elastyczny - dostosowujący się indywidualnie do Twoich potrzeb. Wraz z poznawaniem Cię, będziemy mogli lepiej dopasować proces nauczania.
+    <!-- Container -->
+    <div class="mx-auto max-w-7xl px-5 py-24 md:px-10 md:py-32 lg:py-40 flex flex-col items-center">
+      <!-- Title -->
+      <div class="relative flex flex-col items-center">
+        <h1
+          class="absolute text-cyan-400 mb-6 max-w-3xl text-4xl font-bold md:mb-10 md:text-6xl lg:mb-12 mix-blend-color-burn text-center">
+          Nauka stworzona od nowa dla Ciebie</h1>
+        <h1
+          class="width-100 text-stone-900 mb-6 max-w-3xl text-4xl font-bold md:mb-10 md:text-6xl lg:mb-12 opacity-70 translate-x-0.5 -translate-y-0.5 text-center">
+          Nauka stworzona od nowa dla Ciebie</h1>
+      </div>
+      <!-- Subtitle -->
+      <div class="relative">
+        <p class="text-stone-800 mb-6 max-w-3xl text-lg font-semibold md:mb-10 md:text-xl lg:mb-12 text-center">Ucz się
+          efektywniej
+          z Edutie - platformą e-learningową, która elastycznie dostosuje materiały i zadania specjalnie pod Ciebie.
         </p>
-        <!-- List -->
-        <ul class="grid gap-5 sm:gird-cols-2 md:grid-cols-4 md:gap-0">
-            <li class="flex flex-col items-center gap-6 border-r-[1px] px-10 py-4 max-[767px]:p-8 max-[767px]:[border-right-style:none]">
-            <img src="/assets/images/icons/brain.png" alt="" class="inline-block h-16" />
-            <p class="text-xl font-semibold">Predyspozycje</p>
-            <p class="text-center text-sm text-[#636262]">Wspólnie odkryjemy to, w jaki sposób się uczysz i pomożemy Ci to wykorzystać.</p>
-            </li>
-            <li class="flex flex-col items-center gap-6 border-r-[1px] px-10 py-4 max-[767px]:p-8 max-[767px]:[border-right-style:none]">
-            <img src="/assets/images/icons/skill-development.png" alt="" class="inline-block h-16" />
-            <p class="text-xl font-semibold">Umiejętności</p>
-            <p class="text-center text-sm text-[#636262]">Poznasz umiejętności, które czynią Cię wyjątkowym i to, jak wpływają one na Twoją naukę.</p>
-            </li>
-            <li class="flex flex-col items-center gap-6 border-r-[1px] px-10 py-4 max-[767px]:p-8 max-[767px]:[border-right-style:none]">
-            <img src="/assets/images/icons/path.png" alt="" class="inline-block h-16" />
-            <p class="text-xl font-semibold">Ścieżka</p>
-            <p class="text-center text-sm text-[#636262]">Będziesz kierowany indywidualną ścieżką rozwoju, dobieraną wedle twoich umiejętności.</p>
-            </li>
-            <li class="flex flex-col items-center gap-6 px-10 py-4 max-[767px]:p-8 max-[767px]:[border-right-style:none]">
-              <img src="/assets/images/icons/light-bulb.png" alt="" class="inline-block h-16" />
-              <p class="text-xl font-semibold">Wiedza</p>
-              <p class="text-center text-sm text-[#636262]">Rozpoznasz luki w dotychczasowej wiedzy, aby móc rozwijać swoje kompetencje dalej.</p>
-              </li>
-          </ul>
+      </div>
+      <!-- Buttons -->
+      <div class="flex items-stretch gap-4">
+        <!-- <a href="#" class="mr-6 bg-black px-8 py-4 text-center font-semibold text-white lg:mr-8"> Przejdź do aplikacji</a> -->
+        <a href="https://discord.gg/UAYCpZXFAE" target="_blank"
+          class="flex items-center justify-center border border-solid bg-white px-6 py-3 font-bold rounded-3xl tracking-wider">
+          <img src="assets/images/icons/antenna-svgrepo-com.svg" alt="" class="mr-2 max-h-6 w-6 scale-150" />
+          <h6>Dołącz do Discorda</h6>
+        </a>
+        <a href="/closed-alpha"
+          class="flex items-center justify-center border border-solid bg-amber-700 px-6 py-3 font-bold rounded-3xl tracking-wider text-white">
+          <img src="assets/images/icons/rocket-svgrepo-com.svg" alt="" class="mr-2 max-h-6 w-6 scale-150" />
+          <h6>Wejdź do Edutie</h6>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- separator -->
+    <div class="separator">
+    </div>
+
+  </div>
+</header>
+
+
+<!-- ============================================ -->
+<!--                  Features                    -->
+<!-- ============================================ -->
+
+
+<section id="features">
+  <!-- Container -->
+  <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+    <!-- Title -->
+    <h2 class="items-center text-center text-3xl font-bold md:text-5xl">Ucz się zgodnie ze swoimi preferencjami</h2>
+    <p class="mx-auto mb-8 my-4 max-w-lg text-center text-sm text-[#636262] sm:text-base md:mb-12">
+      Proces nauczania powinien być elastyczny - dostosowujący się indywidualnie do Twoich potrzeb. Wraz z poznawaniem
+      Cię, będziemy mogli lepiej dopasować proces nauczania.
+    </p>
+    <!-- List -->
+    <ul class="grid gap-5 sm:gird-cols-2 md:grid-cols-4 md:gap-0">
+      <li
+        class="flex flex-col items-center gap-6 border-r-[1px] px-10 py-4 max-[767px]:p-8 max-[767px]:[border-right-style:none]">
+        <img src="./assets/images/icons/cognition-svgrepo-com.svg" alt="Predyspozycje - Ikona predyspozycji ucznia" class="inline-block h-16 scale-150" />
+        <p class="text-xl font-semibold">Predyspozycje</p>
+        <p class="text-center text-sm text-gray-700">Razem odkryjemy, jak najlepiej się uczysz, by efektywnie wspierać Twój proces nauki i rozwój umiejętności.</p>
+      </li>
+      <li
+        class="flex flex-col items-center gap-6 border-r-[1px] px-10 py-4 max-[767px]:p-8 max-[767px]:[border-right-style:none]">
+        <img src="./assets/images/icons/writing-svgrepo-com.svg" alt="Praktyka - Ikona Nauki Poprzez Praktykę" class="inline-block h-16 scale-150" />
+        <p class="text-xl font-semibold">Praktyka</p>
+        <p class="text-center text-sm text-gray-700">Poznasz wiedzę, łącząc teorię i praktykę - ucząc się poprzez własne aktywności edukacyjne!</p>
+      </li>
+      <li
+        class="flex flex-col items-center gap-6 border-r-[1px] px-10 py-4 max-[767px]:p-8 max-[767px]:[border-right-style:none]">
+        <img src="./assets/images/icons/the-road-svgrepo-com.svg" alt="Ścieżka - Ikona indywidualnej ścieżki nauki" class="inline-block h-16 scale-150" />
+        <p class="text-xl font-semibold">Ścieżka</p>
+        <p class="text-center text-sm text-gray-700">Będziesz podążał indywidualną ścieżką rozwoju, idealnie dostosowaną do Twoich umiejętności i potrzeb.</p>
+      </li>
+      <li class="flex flex-col items-center gap-6 px-10 py-4 max-[767px]:p-8 max-[767px]:[border-right-style:none]">
+        <img src="./assets/images/icons/lightbulb-svgrepo-com.svg" alt="Wiedza - Ikona eureki" class="inline-block h-16 scale-150" />
+        <p class="text-xl font-semibold">Wiedza</p>
+        <p class="text-center text-sm text-gray-700">Rozpoznasz luki w swojej wiedzy, by rozwijać kompetencje i skutecznie poszerzać swoje umiejętności.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<hr />
+
+<section>
+  <!-- Container -->
+  <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+    <!-- Title -->
+    <h2 class="text-center text-3xl font-bold md:text-5xl">Jak to działa</h2>
+    <p class="mx-auto mb-8 mt-4 max-w-lg text-center text-sm text-gray-700 sm:text-base md:mb-12 lg:mb-16">
+      Edutie oferuje innowacyjny proces nauczania online, który jest zarówno efektywny, jak i intuicyjny. Dzięki
+      personalizowanym materiałom, uczysz się szybciej i efektywniej, bez tracenia czasu na wyszukiwanie informacji
+      jak i powtarzanie tego co już dobrze potrafisz.
+    </p>
+    <!-- Content -->
+    <div class="mx-auto grid max-w-xl gap-6">
+      <!-- Item -->
+      <div class="flex items-center justify-center rounded-3xl bg-amber-100 px-6 py-4 md:-translate-x-20">
+        <div class="mr-6 flex h-14 w-14 flex-none items-center justify-center rounded-3xl bg-white">
+          <p class="text-sm font-bold sm:text-xl">1</p>
         </div>
-    </section>
+        <p class="text-sm sm:text-base">Wybierasz spośród dopasowanych do ciebie materiałów, lub prosisz o stworzenie
+          nowych w oparciu o twój profil.</p>
+      </div>
+      <!-- Item -->
+      <div class="flex items-center justify-center rounded-3xl bg-amber-100 px-6 py-4 md:translate-x-20">
+        <div class="mr-6 flex h-14 w-14 flex-none items-center justify-center rounded-3xl bg-white">
+          <p class="text-sm font-bold sm:text-xl">2</p>
+        </div>
+        <p class="text-sm sm:text-base">Wykonujesz zadanie w oparciu o zestaw spersonalizowanych materiałów i
+          wytłumaczeń zapewnionych w pakiecie.</p>
+      </div>
+      <!-- Item -->
+      <div class="flex items-center justify-center rounded-3xl bg-amber-100 px-6 py-4 md:-translate-x-20">
+        <div class="mr-6 flex h-14 w-14 flex-none items-center justify-center rounded-3xl bg-white">
+          <p class="text-sm font-bold sm:text-xl">3</p>
+        </div>
+        <p class="text-sm sm:text-base">Przesyłasz swoje rozwiązanie, wraz z opisem Twojego sposobu myślenia i dotarcia
+          do odpowiedzi</p>
+      </div>
+      <!-- Item -->
+      <div class="flex items-center justify-center bg-amber-100 px-6 py-4 md:translate-x-20 rounded-3xl">
+        <div class="mr-6 flex h-14 w-14 flex-none items-center justify-center rounded-3xl bg-white">
+          <p class="text-sm font-bold sm:text-xl">4</p>
+        </div>
+        <p class="text-sm sm:text-base">Analizujemy Twoje sprawozdanie i dostosowujemy Twój profil, aby tworzyć i
+          dopasowywać lepsze materiały dla Ciebie.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <hr/>
+<hr />
 
-    <section>
-      <!-- Container -->
-      <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
-        <!-- Title -->
-        <h2 class="text-center text-3xl font-bold md:text-5xl">Jak to działa</h2>
-        <p class="mx-auto mb-8 mt-4 max-w-lg text-center text-sm text-[#636262] sm:text-base md:mb-12 lg:mb-16">
-            Proces nauczania w Edutie jest nie tylko efektywny, ale i prosty. Chcemy abyś skupił się na zdobywaniu wiedzy i nie dekoncentrował się obsługą aplikacji i szukaniem informacji.
-        </p>
-        <!-- Content -->
-        <div class="mx-auto grid max-w-xl gap-6">
-          <!-- Item -->
-          <div class="flex items-center justify-center rounded-sm bg-lime-100 px-6 py-4 md:-translate-x-20">
-            <div class="mr-6 flex h-14 w-14 flex-none items-center justify-center rounded-sm bg-white">
-              <p class="text-sm font-bold sm:text-xl">1</p>
-            </div>
-            <p class="text-sm sm:text-base">Wybierasz spośród dopasowanych do ciebie materiałów, lub prosisz o stworzenie nowych w oparciu o twój profil.</p>
+<!-- Section testimonials -->
+<section>
+
+  <div class="mx-auto w-full max-w-5xl px-5 py-16 md:px-10 md:py-20">
+    <!-- Heading -->
+    <div class="mx-auto mb-6 flex max-w-3xl flex-col text-center md:mb-10 lg:mb-12">
+      <h2 class="text-3xl font-bold md:text-5xl"> Poznaj opinie uczniów </h2>
+    </div>
+    <!-- Contents -->
+    <div class="grid grid-cols-1 gap-8 sm:gap-20 lg:grid-cols-2">
+      <!-- Content 1 -->
+      <div>
+        <div class="mb-12 mt-4 flex w-full items-center justify-center gap-4">
+          <img src="assets/images/icons/jealous-svgrepo-com.svg" alt="" class="max-w-20" />
+          <div class="flex gap-1">
+            <img src="assets/images/icons/favourite-rate-star-svgrepo-com.svg" alt="" class="max-w-6" />
+            <img src="assets/images/icons/favourite-rate-star-svgrepo-com.svg" alt="" class="max-w-6" />
+            <img src="assets/images/icons/favourite-rate-star-svgrepo-com.svg" alt="" class="max-w-6" />
+            <img src="assets/images/icons/favourite-rate-star-svgrepo-com.svg" alt="" class="max-w-6" />
+            <img src="assets/images/icons/favourite-rate-star-svgrepo-com.svg" alt="" class="max-w-6" />
           </div>
-          <!-- Item -->
-          <div class="flex items-center justify-center rounded-sm bg-lime-100 px-6 py-4 md:translate-x-20">
-            <div class="mr-6 flex h-14 w-14 flex-none items-center justify-center rounded-sm bg-white">
-              <p class="text-sm font-bold sm:text-xl">2</p>
-            </div>
-            <p class="text-sm sm:text-base">Wykonujesz zadanie w oparciu o zestaw spersonalizowanych materiałów i wytłumaczeń zapewnionych w pakiecie.</p>
-          </div>
-          <!-- Item -->
-          <div class="flex items-center justify-center rounded-sm bg-lime-100 px-6 py-4 md:-translate-x-20">
-            <div class="mr-6 flex h-14 w-14 flex-none items-center justify-center rounded-sm bg-white">
-              <p class="text-sm font-bold sm:text-xl">3</p>
-            </div>
-            <p class="text-sm sm:text-base">Przesyłasz swoje rozwiązanie, wraz z opisem Twojego sposobu myślenia i dotarcia do odpowiedzi</p>
-          </div>
-          <!-- Item -->
-          <div class="flex items-center justify-center rounded-sm bg-lime-100 px-6 py-4 md:translate-x-20">
-            <div class="mr-6 flex h-14 w-14 flex-none items-center justify-center rounded-sm bg-white">
-              <p class="text-sm font-bold sm:text-xl">4</p>
-            </div>
-            <p class="text-sm sm:text-base">Analizujemy Twoje sprawozdanie i dostosowujemy Twój profil, aby tworzyć i dopasowywać lepsze materiały dla Ciebie.</p>
-          </div>
+        </div>
+        <p class="mb-6 max-w-lg text-center text-gray-700 md:max-w-md">Świetna aplikacja do nauki! 👌 Zadania są dobrze
+          dopasowane do poziomu i stopniowo stają się trudniejsze, co naprawdę pomaga w rozwoju. Dzięki feedbackowi
+          wiem, nad czym muszę popracować. Z Edutie uczę się efektywnie, bez tracenia czasu na to, co już umiem.</p>
+        <div class="flex justify-around">
+          <p class="text-sm font-bold md:max-w-md">Krzysiek</p>
+          <p class="text-sm font-bold md:max-w-md">Technikum mechatroniczne nr 1</p>
         </div>
       </div>
-    </section>
-
-    <hr/>
-
-    
-
-		<!-- Section FAQ -->
-		<section>
-		  <!-- FAQ Container -->
-		  <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24">
-		    <!-- FAQ Title -->
-		    <div class="mb-8 text-center md:mb-12 lg:mb-16">
-		      <h2 class="text-3xl font-bold md:text-5xl">Najczęściej zadawane pytania</h2>
-		      <p class="mx-auto mt-4 max-w-lg text-[#647084]"></p>
-		    </div>
-		    <!-- FAQ Content -->
-		    <div class="mb-12 flex flex-wrap justify-center gap-4 lg:grid-cols-2">
-		      <!-- FAQ Item -->
-		      <div class="mb-6 border border-solid border-[#dfdfdf] p-8 lg:max-w-xl">
-		        <div class="flex justify-between">
-		          <p class="text-xl font-bold"> Kiedy premiera Edutie? </p>
-		        </div>
-		        <p class="mb-4 mt-4"> 
-              Aplikacja jest nieustannie rozwijana aby zapewnić najlepsze możliwe doświadczenia jej przyszłym użytkownikom. Jeśli wszystko pójdzie dobrze, jej premiera planowana jest na luty 2025 roku.
-            </p>
-		      </div>
-		      <!-- FAQ Item -->
-		      <div class="mb-6 border border-solid border-[#dfdfdf] p-8 lg:max-w-xl">
-		        <div class="flex justify-between">
-		          <p class="text-xl font-bold"> Skąd pomysł? </p>
-		        </div>
-		        <p class="mb-4 mt-4"> 
-              Zauważyliśmy, że obecny w szkołach proces nauczania opiera się na "hurtowym" wykładaniu wiedzy dla uczniów. Opierając się o rozmaite badania psychologiczne doszliśmy do wniosku, że proces ten jest nieefektywny i istnieje dużo przestrzeni na ulepszenia procesu nauczania.
-            </p>
-		      </div>
-		      <!-- FAQ Item -->
-		      <div class="mb-6 border border-solid border-[#dfdfdf] p-8 lg:max-w-xl">
-		        <div class="flex justify-between">
-		          <p class="text-xl font-bold"> Kto tworzy Edutie? </p>
-		        </div>
-		        <p class="mb-4 mt-4"> 
-              Edutie jest tworzone przez młodych ludzi z pasją, którzy mają wieloletnie doświadczenia z edukacją i uczeniem się. Twierdzimy, że zawsze lepiej jest umieć więcej; jesteśmy tym samym świadomi, że bez nauki nic więcej się nie nauczymy. Więcej o naszym zespole dowiesz się na <a href="https://nowanauka.pl" class="text-lime-600"><b>tutaj</b></a>.
-            </p>
-		      </div>
-		      <!-- FAQ Item -->
-		      <div class="mb-6 border border-solid border-[#dfdfdf] p-8 lg:max-w-xl">
-		        <div class="flex justify-between">
-		          <p class="text-xl font-bold"> Czemu Edutie jest w formie aplikacji? </p>
-		        </div>
-		        <p class="mb-4 mt-4"> 
-              Forma aplikacji pozwala nam w łatwy sposób optymalizować komputerowo proces nauczania. Ponadto, w dobie dynamicznego rozwoju technologii bardzo duży odsetek uczniów ma dostęp do komputera, co sprawia że Edutie jest dostępne dla większości polskich uczniów.
-            </p>
-		      </div>
-		      <!-- FAQ Item -->
-		      <div class="mb-6 border border-solid border-[#dfdfdf] p-8 lg:max-w-xl">
-		        <div class="flex justify-between">
-		          <p class="text-xl font-bold"> W jaki sposób Edutie optymalizuje proces nauczania? </p>
-		        </div>
-		        <p class="mb-4 mt-4"> 
-              Edutie bazuje na sztucznej inteligencji, która tworzy materiały z których później się uczysz. Materiały te są optymalizowane w oparciu o parametry zawarte w <b class="text-lime-600">profilach nauczania</b>. W podobny sposób dobieramy ścieżkę nauki i dobierane zadania, opierając się o parametry które Cię charakteryzują.
-            </p>
-		      </div>
-		  </div>
-		</section>
-
-    <hr/>
-
-    <!-- Section CTA -->
-    <section id="waitlist">
-        <!-- Container -->
-        <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
-        <!-- Component -->
-        <div class="mx-auto max-w-3xl text-center">
-            <!-- Title -->
-            <h2 class="mb-4 text-3xl font-bold md:text-5xl">Dołącz do waitlisty</h2>
-            <p class="mx-auto mb-6 max-w-xl text-sm text-[#636262] sm:text-base md:mb-12">Aplikacja dalej jest w fazie rozwoju. Zostaw nam kontakt do siebie, aby być na bieżąco z Edutie.</p>
-            <!-- Form -->
-            <div class="mx-auto mb-4 flex max-w-xl justify-center">
-            <form name="email-form" method="get" class="relative w-full max-w-[80%]">
-                <input type="email" class="h-9 w-full border border-solid border-black bg-white px-3 py-6 text-sm text-[#333333]" placeholder="Adres email" required="" />
-                <input type="submit" value="Dołącz" class="relative right-0 top-[5px] w-full cursor-pointer bg-black px-6 py-2 text-center font-semibold text-white sm:absolute sm:right-[5px] sm:w-auto" />
-            </form>
-            </div>
+      <!-- Content 2 -->
+      <div>
+        <div class="mb-12 mt-4 flex w-full items-center justify-center gap-4">
+          <img src="assets/images/icons/happy-2-svgrepo-com.svg" alt="" class="max-w-20" />
+          <div class="flex gap-1">
+            <img src="assets/images/icons/favourite-rate-star-svgrepo-com.svg" alt="" class="max-w-6" />
+            <img src="assets/images/icons/favourite-rate-star-svgrepo-com.svg" alt="" class="max-w-6" />
+            <img src="assets/images/icons/favourite-rate-star-svgrepo-com.svg" alt="" class="max-w-6" />
+            <img src="assets/images/icons/favourite-rate-star-svgrepo-com.svg" alt="" class="max-w-6" />
+            <img src="assets/images/icons/favourite-rate-star-svgrepo-com.svg" alt="" class="max-w-6" />
+          </div>
         </div>
+        <p class="mb-6 max-w-lg text-center text-gray-700 md:max-w-md"> Edutie to zmiana na lepsze! 🚀 Uczę się we
+          własnym tempie, a dzięki kreatywnym zadaniom z ciekawą fabułą naprawdę się wkręcam. Wreszcie mogę skupić się
+          na tym, co mnie rozwija i co mnie interesuje. Idealne dla każdego, kto chce więcej niż tylko wkuwanie! </p>
+        <div class="flex justify-around">
+          <p class="text-sm font-bold md:max-w-md">Natalia</p>
+          <p class="text-sm font-bold md:max-w-md">Liceum nr XLCII</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-  {% endblock body %}
+<hr />
+
+<!-- Section FAQ -->
+<section>
+  <!-- FAQ Container -->
+  <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24">
+    <!-- FAQ Title -->
+    <div class="mb-8 text-center md:mb-12 lg:mb-16">
+      <h2 class="text-3xl font-bold md:text-5xl">Możesz chcieć o to zapytać</h2>
+      <p class="mx-auto mt-4 max-w-lg text-[#647084]"></p>
+    </div>
+    <!-- FAQ Content -->
+    <div class="mb-12 flex flex-wrap justify-center gap-8 lg:grid-cols-2">
+      <!-- FAQ Item -->
+      <div class="mb-6 border border-solid border-gray-300 shadow p-8 lg:max-w-xl rounded-3xl">
+        <div class="flex justify-between">
+          <p class="text-xl font-bold"> Jak działa personalizacja zadań? </p>
+        </div>
+        <p class="mb-4 mt-4">
+          Personalizacja zadań w naszej aplikacji edukacyjnej opiera się na indywidualnym profilu użytkownika, który
+          analizuje wcześniejsze wyniki oraz preferencje w nauce. Dzięki zaawansowanemu algorytmowi możemy dostosować
+          każde zadanie tak, aby idealnie pasowało do Twojego poziomu i stylu uczenia się. System analizuje Twoje mocne
+          i słabe strony, dostarczając Ci zadania, które maksymalizują efektywność nauki. W ten sposób uczysz się
+          szybciej i skuteczniej, skupiając się na kluczowych dla Ciebie zagadnieniach.
+        </p>
+      </div>
+      <!-- FAQ Item -->
+      <div class="mb-6 border border-solid border-gray-300 shadow p-8 lg:max-w-xl rounded-3xl">
+        <div class="flex justify-between">
+          <p class="text-xl font-bold"> Jak wygląda system oceniania? </p>
+        </div>
+        <p class="mb-4 mt-4">
+          System oceniania w naszej aplikacji edukacyjnej jest oparty na szczegółowej analizie każdego tematu zawartego
+          w zadaniu. Oceniamy zadania niezależnie od poziomu trudności, koncentrując się na Twoim postępie w każdym
+          aspekcie materiału. Dzięki temu otrzymujesz precyzyjną informację zwrotną na temat swoich umiejętności, a
+          ocena jest dostosowana do indywidualnych wyników, a nie do ogólnych standardów programu nauczania. To pozwala
+          na bardziej obiektywne i motywujące ocenianie, które wspiera Twój rozwój w każdym kroku nauki.
+        </p>
+      </div>
+      <!-- FAQ Item -->
+      <div class="mb-6 border border-solid border-gray-300 shadow p-8 lg:max-w-xl rounded-3xl">
+        <div class="flex justify-between">
+          <p class="text-xl font-bold"> Czy aplikacja śledzi moje błędy i proponuje materiały do ich poprawy? </p>
+        </div>
+        <p class="mb-4 mt-4">
+          Tak, nasza aplikacja edukacyjna monitoruje Twoje błędy oraz obszary, w których napotykasz trudności. Dzięki
+          temu system automatycznie dostosowuje proces nauki, zapewniając materiały i zadania, które pomagają Ci
+          poprawić konkretne umiejętności i eliminować powtarzające się błędy. To personalizowane podejście zapewnia, że
+          skupiasz się na tym, co wymaga poprawy, dzięki czemu Twoje postępy są widoczne szybciej. Nasz system wspiera
+          Cię na każdym etapie, zapewniając indywidualne podejście do Twojego rozwoju.
+        </p>
+      </div>
+      <!-- FAQ Item -->
+      <div class="mb-6 border border-solid border-gray-300 shadow p-8 lg:max-w-xl rounded-3xl">
+        <div class="flex justify-between">
+          <p class="text-xl font-bold"> Kto tworzy Edutie? </p>
+        </div>
+        <p class="mb-4 mt-4">
+          Edutie zostało stworzone przez zespół młodych, pełnych pasji osób, które mają wieloletnie doświadczenie w
+          edukacji oraz uczeniu się. Nasz zespół składa się z ludzi, którzy sami doświadczyli wyzwań współczesnej
+          edukacji i chcą wprowadzać innowacje, które pomogą uczniom osiągać lepsze wyniki. Tworzymy Edutie, ponieważ
+          wierzymy, że wiedza to klucz do sukcesu, a nauka powinna być dostępna i dopasowana do indywidualnych potrzeb
+          każdego użytkownika. Jeśli chcesz dowiedzieć się więcej o naszej misji i ludziach, którzy stoją za Edutie,
+          odwiedź naszą stronę zespołu <a href="https://nowanauka.pl" class="text-lime-600"><b>tutaj</b></a>, gdzie
+          znajdziesz pełne informacje o naszym zespole i wizji.
+        </p>
+      </div>
+      <!-- FAQ Item -->
+      <div class="mb-6 border border-solid border-gray-300 shadow p-8 lg:max-w-xl rounded-3xl">
+        <div class="flex justify-between">
+          <p class="text-xl font-bold"> Czy jest opcja dostępu do dodatkowych materiałów poza zadaniami? </p>
+        </div>
+        <p class="mb-4 mt-4">
+          Tak, w naszej aplikacji znajdziesz dodatkowe materiały edukacyjne, które wspierają proces nauki. Oprócz zadań
+          i materiałów teoretycznych, nasz system gromadzi zewnętrzne źródła dostosowane do Twoich potrzeb edukacyjnych.
+          Dzięki temu masz dostęp do szerokiego zakresu zasobów, które poszerzają wiedzę i pogłębiają zrozumienie
+          tematów, nad którymi pracujesz. Nasze rekomendacje obejmują artykuły, e-booki i inne materiały, które pomogą
+          Ci zdobywać wiedzę i osiągać jeszcze lepsze wyniki.
+        </p>
+      </div>
+    </div>
+</section>
+
+<hr />
+
+<!-- Section CTA -->
+<section>
+  <!-- Container -->
+  <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
+    <!-- Component -->
+    <div class="mx-auto max-w-3xl text-center">
+      <!-- Title -->
+      <h2 class="mb-4 text-3xl font-bold md:text-5xl">Pora na naukę.</h2>
+      <p class="mx-auto mb-6 max-w-xl text-sm text-gray-700 sm:text-base md:mb-12">
+        Załóż konto i rozpocznij swoją podróż do efektywnej nauki z Edutie - rozwijaj się razem z nami!
+      </p>
+      <!-- Form -->
+      <div class="mx-auto mb-4 flex max-w-xl justify-center">
+        <a href="#"
+          class="flex items-center justify-center border border-solid bg-amber-700 px-6 py-3 font-bold rounded-3xl tracking-wider text-white">
+          <img src="assets/images/icons/rocket-svgrepo-com.svg" alt="" class="mr-2 max-h-6 w-6 scale-150" />
+          <h6>Wejdź do Edutie</h6>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock body %}
