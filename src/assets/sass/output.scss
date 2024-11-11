@@ -784,19 +784,33 @@ video {
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.bg-\[--secondary\] {
+  background-color: var(--secondary);
+}
+
 .bg-amber-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 243 199 / var(--tw-bg-opacity));
 }
 
-.bg-amber-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(180 83 9 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+.bg-lime-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 252 203 / var(--tw-bg-opacity));
+}
+
+.bg-purple-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 232 255 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -912,6 +926,10 @@ video {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -968,6 +986,10 @@ video {
   opacity: 0.7;
 }
 
+.opacity-80 {
+  opacity: 0.8;
+}
+
 .mix-blend-color-burn {
   mix-blend-mode: color-burn;
 }
@@ -987,8 +1009,10 @@ video {
 }
 
 :root {
-  --primary: #58d400;
-  --secondary: #f5b410;
+  --primary: #80C23E;
+  --secondary: #50B2BE;
+  --accent-1: #F5CC29;
+  --accent-2: #382555;
 }
 
 @font-face{
@@ -1058,6 +1082,7 @@ h1, h2, h3, h4, h5, h6 {
 // yup, the manner is indeed awful but it works
 @keyframes rotate-gradient {
   0% {
+    background-position: 0% 50%;
     background: linear-gradient(25deg, var(--secondary) 0%, var(--secondary) 30%, var(--primary) 100%);
   }
   2% {
@@ -1133,6 +1158,7 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(73deg, var(--secondary) 0%, var(--secondary) 0%, var(--primary) 100%);
   }
   50% {
+    background-position: 100% 50%;
     background: linear-gradient(75deg, var(--secondary) 0%, var(--secondary) 0%, var(--primary) 100%);
   }
   52% {
