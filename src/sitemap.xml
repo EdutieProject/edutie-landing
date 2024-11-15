@@ -2,6 +2,12 @@
 <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
 <loc>https://edutie.nowanauka.pl/</loc>
-<lastmod>2023-11-12T18:41:39+00:00</lastmod>
+<lastmod>2024-11-15T18:12:15+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://edutie.nowanauka.pl/alpha</loc>
+<lastmod>2024-11-15T18:12:15+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 </urlset>
