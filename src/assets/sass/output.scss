@@ -1058,33 +1058,48 @@ h1, h2, h3, h4, h5, h6 {
   background-attachment: fixed;
 }
 
-// separator 
-.separator{
-  position:relative;
-  padding-bottom:5.5%;
-  overflow:hidden;
-  &::after, &::before {
-    content:'';
-    position:absolute;
-    -webkit-backface-visibility:hidden;
-  }
-  &::before{
-    background: transparent;
-    bottom:100%;
-    left:-1%;
-    width:101%;
-    height:200%;
-    transform-origin: 100% 100%;
-    transform: rotate(-3deg);
-  }
-  &::after {
-    background: white;
-    top:100%;
-    width:115%;
-    height:100%;
-    transform-origin: 0 0;
-    transform: rotate(-2.5deg);
-  }
+// separator - hero
+.custom-shape-divider-bottom-1734445800 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1734445800 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 95px;
+}
+
+.custom-shape-divider-bottom-1734445800 .shape-fill {
+  fill: #FFFFFF;
+}
+
+// separator - footer
+.custom-shape-divider-bottom-1734445858 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1734445858 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 95px;
+}
+
+.custom-shape-divider-bottom-1734445858 .shape-fill {
+  fill: #000000;
 }
 
 // hero gradient rotation animation
