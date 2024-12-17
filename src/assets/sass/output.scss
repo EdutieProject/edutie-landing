@@ -1052,7 +1052,7 @@ h1, h2, h3, h4, h5, h6 {
 
 // hero gradient
 .hero-gradient {
-  animation: rotate-gradient 4s infinite;
+  animation: rotate-gradient 3s infinite;
   background: #f5b410;
   background: linear-gradient(25deg, var(--secondary) 0%, var(--secondary) 30%, var(--primary) 100%);
   background-attachment: fixed;
