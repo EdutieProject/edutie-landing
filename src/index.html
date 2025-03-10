@@ -13,61 +13,73 @@ permalink: '/'
 
 
 <!-- HERO -->
-<header id="hero">
-  <!-- Hero top -->
-  <div class="relative hero-gradient">
-    <!-- <div class="absolute top-0 left-0 right-0 mt-4 w-full flex flex-row items-center justify-center">
-      <img src="./assets/images/logo.png" width="120px"/>
-    </div> -->
-    <!-- Container -->
-    <div class="mx-auto max-w-7xl px-5 py-24 md:px-10 md:py-32 lg:py-40 flex flex-col items-center">
-      <!-- Title -->
-      <div class="relative flex flex-col items-center">
-        <h1
-          class="absolute text-cyan-400 mb-6 max-w-3xl text-4xl font-bold md:mb-10 md:text-6xl lg:mb-12 mix-blend-color-burn text-center">
-          Nauka stworzona od nowa dla Ciebie</h1>
-        <h1
-          class="width-100 text-stone-900 mb-6 max-w-3xl text-4xl font-bold md:mb-10 md:text-6xl lg:mb-12 opacity-80 translate-x-0.5 -translate-y-0.5 text-center">
-          <span style="color: var(--accent-2);">Nauka</span> stworzona od nowa dla <span
-            style="color: var(--accent-2);">Ciebie</span>
-        </h1>
-      </div>
-      <!-- Subtitle -->
-      <div class="relative">
-        <p class="text-stone-800 mb-6 max-w-3xl text-lg font-semibold md:mb-10 md:text-xl lg:mb-12 text-center">Ucz się
-          <span style="color: var(--accent-2);">efektywniej</span>
-          z Edutie - platformą e-learningową, która elastycznie dostosuje materiały i zadania specjalnie pod Ciebie.
+<section
+id="hero"
+  class="container mx-auto px-3 sm:px-5 md:px-8 lg:px-12 py-28 grid grid-cols-1 items-center gap-14 md:py-28 lg:grid-cols-2 min-h-[90vh]"
+>
+  <div
+    class="flex flex-col gap-8 lg:gap-12"
+    data-prompt="Write the copy for the heading group. The headline should emphasize the value, result or transformation that the customer will receive from this service. This will be the first thing the customer sees so it must be compelling and captivating. The sub headline should clearly explain what this company provides to get them the result from the headline. The call to action button should entice the user to take a specific action, so keep it very short."
+  >
+    <hgroup>
+      <h1
+        data-id="headline"
+        class="mb-3.5 mt-0 text-balance text-5xl font-extrabold leading-tight sm:mb-3 sm:mt-0 sm:leading-tight lg:mb-3 lg:mt-0 lg:text-6xl lg:leading-none xl:mb-3 xl:mt-0 xl:text-7xl xl:leading-none 2xl:mb-3.5 2xl:mt-0"
+      >
+        Learn smarter with <span class="goofy-text text-[--accent-2]">edutie</span>
+      </h1>
+      <p data-id="sub_headline">
+        Streamline, ease and personalize your learning process with innovative
+        AI-driven learning platform.
+      </p>
+    </hgroup>
+
+    <div class="flex gap-4">
+      <a
+        class="bg-gray-200 hover:bg-gray-600 hover:text-white border border-gray-600 rounded px-5 py-3 text-center text-gray-700 goofy-text tracking-wide"
+        href="https://discord.gg/UAYCpZXFAE"
+        target="_blank"
+      >
+        Join our discord
+    </a>
+      <a href="#app"
+            class="bg-[--primary] hover:bg-[--primary-hover] rounded px-5 py-3 text-center goofy-text text-white tracking-wide"
+          >
+            Start learning
+      </a>
+    </div>
+  </div>
+
+  <div class="w-full max-lg:row-start-1 max-lg:mb-8 relative">
+    <div class="absolute top-0 left-0 w-full h-full z-10 grid place-items-center pr-10">
+      <div 
+      class="hero-showcase bg-white rounded-lg shadow-lg max-lg:h-64 max-lg:w-80 h-80 w-64 p-4 border border-solid border-gray-300">
+      <div id="typed-strings">
+        <p>
+          <span class="goofy-text text-[--accent-2]">edutie</span>:<br/>
+          Two <b>fishing boats</b> sail out to sea. Imagine they are charged electrostatically with a charge of <b>0.1 C</b>. What is the electrostatic force of the mutual interaction?<br/>
+          <span class="goofy-text text-[--secondary]">your solution</span>:<br/>^1500 Uhhmmm... 2 Newtons?
+        </p>
+        <p>
+          <span class="goofy-text text-[--accent-2]">edutie</span>:<br/>
+          No! This is not correct. Next time, you should use the correct formula for calculating electrostatic force. Let's try once again...<br/>
+        </p>
+        <p>
+          <span class="goofy-text text-[--accent-2]">edutie</span>:<br/>
+          Let's consider <b>two electrostatic charges</b> of <b> 0.3 C </b>. Using the Coulomb's law formula <b>calculate the force </b> of the interaction.<br/>
+          <span class="goofy-text text-[--secondary]">your solution</span>:<br/>^1500 That would be 0.09 C<sup>2</sup> over the square of a distance between them.
+        </p>
+        <p>
+          <span class="goofy-text text-[--accent-2]">edutie</span>:<br/>
+          Yeah! However, you forgot the <b> Coulomb's constant</b>. Remember about it the next time and we will be good 😎.
         </p>
       </div>
-      <!-- Buttons -->
-      <div class="flex items-stretch gap-4">
-        <!-- <a href="#" class="mr-6 bg-black px-8 py-4 text-center font-semibold text-white lg:mr-8"> Przejdź do aplikacji</a> -->
-        <a href="https://discord.gg/UAYCpZXFAE" target="_blank"
-          class="flex items-center justify-center border border-solid bg-white px-6 py-3 rounded-3xl tracking-wider font-medium">
-          <img src="assets/images/icons/antenna-svgrepo-com.svg" alt="" class="mr-2 max-h-6 w-6 scale-150" />
-          <h6>Dołącz do Discorda</h6>
-        </a>
-        <!-- This button should utilize reverse proxy redirect -->
-        <a href="/app"
-          class="flex items-center justify-center border border-solid bg-[--secondary] px-6 py-3 rounded-3xl tracking-wider text-white font-medium">
-          <img src="assets/images/icons/rocket-svgrepo-com.svg" alt="" class="mr-2 max-h-6 w-6 scale-150" />
-          <h6>Wejdź do Edutie</h6>
-        </a>
+      <span id="typed"></span>
       </div>
     </div>
-
-
-    <!-- separator -->
-    <div class="custom-shape-divider-bottom-1734445800">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"></path>
-      </svg>
-    </div>
-
+    <img src="/assets/svgs/splash.svg" alt="main hero image" class="w-full scale-125" />
   </div>
-</header>
+</section>
 
 
 <!-- ============================================ -->
@@ -80,8 +92,8 @@ permalink: '/'
   <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
     <!-- Title -->
     <h2 class="items-center text-center text-3xl font-bold md:text-5xl">Ucz się <span
-        style="color: var(--accent-1);">zgodnie</span> ze swoimi <span
-        style="color: var(--accent-2);">preferencjami</span></h2>
+        style="color: var(--accent-1);" class="goofy-text">zgodnie</span> ze swoimi <span
+        style="color: var(--accent-2);" class="goofy-text">preferencjami</span></h2>
     <p class="mx-auto mb-8 my-4 max-w-lg text-center text-sm text-[#636262] sm:text-base md:mb-12">
       Proces nauczania powinien być elastyczny - dostosowujący się indywidualnie do Twoich potrzeb. Wraz z poznawaniem
       Cię, będziemy mogli lepiej dopasować proces nauczania.
@@ -181,7 +193,7 @@ permalink: '/'
   <div class="mx-auto w-full max-w-5xl px-5 py-16 md:px-10 md:py-20">
     <!-- Heading -->
     <div class="mx-auto mb-6 flex max-w-3xl flex-col text-center md:mb-10 lg:mb-12">
-      <h2 class="text-3xl font-bold md:text-5xl"> Poznaj <span style="color: var(--secondary);">opinie</span> uczniów
+      <h2 class="text-3xl font-bold md:text-5xl"> Poznaj <span style="color: var(--secondary);" class="goofy-text">opinie</span> uczniów
       </h2>
     </div>
     <!-- Contents -->
@@ -237,7 +249,7 @@ permalink: '/'
   <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
     <!-- Heading -->
     <div class="mx-auto mb-6 flex max-w-3xl flex-col text-center md:mb-10 lg:mb-12">
-      <h2 class="text-3xl font-bold md:text-5xl"> Dlaczego właśnie <span style="color: var(--primary);">Edutie?</span></h2>
+      <h2 class="text-3xl font-bold md:text-5xl"> Dlaczego właśnie <span style="color: var(--primary);" class="goofy-text">edutie</span>?</h2>
       <p class="mx-auto mb-8 mt-4 max-w-lg text-center text-sm text-gray-700 sm:text-base md:mb-12 lg:mb-16">
         Edutie wyznacza nowy standard w nauce dzięki unikalnej personalizacji i aktywnemu budowaniu wiedzy. To nauka dopasowana do Ciebie, skuteczna i inspirująca.
       </p>
@@ -246,7 +258,7 @@ permalink: '/'
     <div class="flex flex-col gap-4 w-full items-stretch text-center">
       <div class="h-[70px] hidden lg:grid grid-cols-2 lg:grid-cols-5 text-xl font-semibold tracking-wide gap-4">
         <div></div>
-        <div class="grid place-items-center"><img src="./assets/images/logo.png" width="140px" alt="Edutie logo" /></div>
+        <div class="grid place-items-center"><img src="./assets/svgs/logo.svg" width="140px" alt="Edutie logo" /></div>
         <div class="grid place-items-center">Nauka z YouTube</div>
         <div class="grid place-items-center">Korepetycje<br />on-line</div>
         <div class="grid place-items-center">Podręczniki i zbiory zadań</div>
@@ -368,16 +380,16 @@ permalink: '/'
     <!-- Component -->
     <div class="mx-auto max-w-3xl text-center">
       <!-- Title -->
-      <h2 class="mb-4 text-3xl font-bold md:text-5xl">Pora na <span style="color: var(--primary);">naukę.</span></h2>
+      <h2 class="mb-4 text-3xl font-bold md:text-5xl">Time to <span class="goofy-text" style="color: var(--primary);">learn.</span></h2>
       <p class="mx-auto mb-6 max-w-xl text-sm text-gray-700 sm:text-base md:mb-12">
         Załóż konto i rozpocznij swoją podróż do efektywnej nauki z Edutie - rozwijaj się razem z nami!
       </p>
       <!-- Form -->
       <div class="mx-auto mb-4 flex max-w-xl justify-center">
-        <a href="#"
-          class="flex items-center justify-center border border-solid bg-[--secondary] px-6 py-3 font-bold rounded-3xl tracking-wider text-white font-medium">
-          <img src="assets/images/icons/rocket-svgrepo-com.svg" alt="" class="mr-2 max-h-6 w-6 scale-150" />
-          <h6>Wejdź do Edutie</h6>
+        <a href="#hero"
+        class="bg-[--primary] hover:bg-[--primary-hover] rounded px-5 py-3 text-center goofy-text text-white tracking-wide"
+            >
+              Join edutie
         </a>
       </div>
     </div>
@@ -391,5 +403,16 @@ permalink: '/'
     </svg>
   </div>
 </section>
+
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 15,
+    // backSpeed: 10,
+    showCursor: false,
+    loop: true,
+    backDelay: 3000
+  });
+</script>
 
 {% endblock body %}
