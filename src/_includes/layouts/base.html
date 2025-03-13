@@ -38,10 +38,13 @@
   <!-- PROD CSS-->
   <!-- <link rel="stylesheet" href="/assets/css/output.css" /> -->
   <!-- DEV STYLESHEET -->
-   <link rel="stylesheet" href="/assets/css/style.css" /> 
+  <link rel="stylesheet" href="/assets/css/style.css" /> 
   <!-- DEV CDN -->
   <script src="https://cdn.tailwindcss.com"></script> 
 
+  <!-- AOS -->
+  <link rel="stylesheet" href="/assets/aos/aos.css" /> 
+  <script src="/assets/aos/aos.js"></script> 
 
   {% block head %}{% endblock %}
 
@@ -105,5 +108,13 @@
   </footer>
 
 </body>
+
+<script>
+  AOS.init({
+      duration: 400, // values from 0 to 3000, with step 50ms
+      once: true, // whether animation should happen only once - while scrolling down
+      easing: 'ease-in-out', // default easing for AOS animations
+  });
+</script>
 
 </html>

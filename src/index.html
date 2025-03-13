@@ -17,7 +17,7 @@ permalink: '/'
   class="container mx-auto px-3 sm:px-5 md:px-8 lg:px-12 py-28 grid grid-cols-1 items-center gap-14 md:py-28 lg:grid-cols-2 min-h-[90vh]">
   <div class="flex flex-col gap-8 lg:gap-12"
     data-prompt="Write the copy for the heading group. The headline should emphasize the value, result or transformation that the customer will receive from this service. This will be the first thing the customer sees so it must be compelling and captivating. The sub headline should clearly explain what this company provides to get them the result from the headline. The call to action button should entice the user to take a specific action, so keep it very short.">
-    <hgroup>
+    <hgroup data-aos="fade-right">
       <h1 data-id="headline"
         class="mb-3.5 mt-0 text-balance text-5xl font-extrabold leading-tight sm:mb-3 sm:mt-0 sm:leading-tight lg:mb-3 lg:mt-0 lg:text-6xl lg:leading-none xl:mb-3 xl:mt-0 xl:text-7xl xl:leading-none 2xl:mb-3.5 2xl:mt-0">
         Learn smarter with <span class="goofy-text text-[--accent-2]">edutie</span>
@@ -28,20 +28,20 @@ permalink: '/'
       </p>
     </hgroup>
 
-    <div class="flex gap-4">
+    <div class="flex gap-4" data-aos="fade-right">
       <a class="bg-gray-200 hover:bg-gray-600 hover:text-white border border-gray-600 rounded px-5 py-3 text-center text-gray-700 goofy-text tracking-wide"
         href="https://discord.gg/UAYCpZXFAE" target="_blank">
         Join our discord
       </a>
-      <a href="#app"
+      <button onclick="document.querySelector('#discord-popup').classList.toggle('hidden')"
         class="bg-[--primary] hover:bg-[--primary-hover] rounded px-5 py-3 text-center goofy-text text-white tracking-wide">
         Start learning
-      </a>
+      </button>
     </div>
   </div>
 
   <div class="w-full max-lg:row-start-1 max-lg:mb-8 relative">
-    <div class="absolute top-0 left-0 w-full h-full z-10 grid place-items-center pr-10">
+    <div class="absolute top-0 left-0 w-full h-full z-10 grid place-items-center pr-10" data-aos="fade-left">
       <div
         class="hero-showcase bg-white rounded-lg shadow-lg max-lg:h-64 max-lg:w-80 h-80 w-64 p-4 border border-solid border-gray-300">
         <div id="typed-strings">
@@ -76,6 +76,24 @@ permalink: '/'
   </div>
 </section>
 
+<div class="fixed hidden h-screen w-screen top-0 left-0 z-50 bg-black/50 grid place-items-center" id="discord-popup">
+  <div class="w-80 bg-white rounded-lg p-8">
+    <h2 class="text-2xl font-bold text-center">We are not ready yet!</h2>
+    <p class="text-center text-gray-700">Our app is still in development. Join our Discord to stay tuned for updates and get support from our team.</p>
+    <div class="flex flex-col gap-4 mt-4">
+      <a href="https://discord.gg/UAYCpZXFAE" target="_blank"
+        class="bg-[--primary] hover:bg-[--primary-hover] rounded px-5 py-3 text-center goofy-text text-white tracking-wide">
+        Join now
+      </a>
+      <button onclick="document.querySelector('#discord-popup').classList.toggle('hidden')";
+        class="bg-gray-200 hover:bg-gray-600 hover:text-white border border-gray-600 rounded px-5 py-3 text-center text-gray-700 goofy-text tracking-wide">
+        Close
+      </button>
+    </div>
+
+  </div>
+</div>
+
 
 <!-- ============================================ -->
 <!--                  Features                    -->
@@ -86,9 +104,9 @@ permalink: '/'
   <!-- Container -->
   <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
     <!-- Title -->
-    <h2 class="items-center text-center text-3xl font-bold md:text-5xl">Learn According to
+    <h2 class="items-center text-center text-3xl font-bold md:text-5xl" data-aos="fade-up">Learn According to
         <span class="goofy-text text-[--secondary]">Your Preferences</span></h2>
-    <p class="mx-auto mb-8 my-4 max-w-lg text-center text-sm text-[#636262] sm:text-base md:mb-12">
+    <p class="mx-auto mb-8 my-4 max-w-lg text-center text-sm text-[#636262] sm:text-base md:mb-12" data-aos="fade-up" data-aos-delay="100">
       The learning process should be flexible and adapt individually to your needs. As we get to know you better, we can tailor the learning experience to suit you best.
     </p>
     <!-- List -->
@@ -130,35 +148,35 @@ permalink: '/'
   <!-- Container -->
   <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24 lg:py-32">
     <!-- Title -->
-    <h2 class="text-center text-3xl font-bold md:text-5xl">How It Works</h2>
-    <p class="mx-auto mb-8 mt-4 max-w-lg text-center text-sm text-gray-700 sm:text-base md:mb-12 lg:mb-16">
+    <h2 class="text-center text-3xl font-bold md:text-5xl" data-aos="fade-up">How It Works</h2>
+    <p class="mx-auto mb-8 mt-4 max-w-lg text-center text-sm text-gray-700 sm:text-base md:mb-12 lg:mb-16" data-aos="fade-up" data-aos-delay="100">
       Edutie offers an innovative online learning process that is both effective and intuitive. With personalized materials, you learn faster and more efficiently, without wasting time searching for information or repeating what you already know well.
     </p>
     <!-- Content -->
     <div class="mx-auto grid max-w-xl gap-6">
       <!-- Item -->
-      <div class="flex items-center justify-center rounded-3xl bg-blue-100 px-6 py-4 md:-translate-x-20">
+      <div class="flex items-center justify-center rounded-3xl bg-blue-100 px-6 py-4 md:-translate-x-20" >
         <div class="mr-6 flex h-14 w-14 flex-none items-center justify-center rounded-3xl bg-white">
           <p class="text-sm font-bold sm:text-xl">1</p>
         </div>
-        <p class="text-sm sm:text-base">Choose from personalized materials or request new ones based on your profile.</p>
+        <p class="text-sm sm:text-base">Choose or create a learning subject and specify what you need to learn.</p>
       </div>
       <!-- Item -->
-      <div class="flex items-center justify-center rounded-3xl bg-lime-100 px-6 py-4 md:translate-x-20">
+      <div class="flex items-center justify-center rounded-3xl bg-lime-100 px-6 py-4 md:translate-x-20" >
         <div class="mr-6 flex h-14 w-14 flex-none items-center justify-center rounded-3xl bg-white">
           <p class="text-sm font-bold sm:text-xl">2</p>
         </div>
-        <p class="text-sm sm:text-base">Complete tasks using customized resources and explanations provided in the package.</p>
+        <p class="text-sm sm:text-base">Complete tasks using customized resources and explanations provided.</p>
       </div>
       <!-- Item -->
-      <div class="flex items-center justify-center rounded-3xl bg-amber-100 px-6 py-4 md:-translate-x-20">
+      <div class="flex items-center justify-center rounded-3xl bg-amber-100 px-6 py-4 md:-translate-x-20" >
         <div class="mr-6 flex h-14 w-14 flex-none items-center justify-center rounded-3xl bg-white">
           <p class="text-sm font-bold sm:text-xl">3</p>
         </div>
         <p class="text-sm sm:text-base">Submit your solution along with an explanation of your thought process.</p>
       </div>
       <!-- Item -->
-      <div class="flex items-center justify-center bg-purple-100 px-6 py-4 md:translate-x-20 rounded-3xl">
+      <div class="flex items-center justify-center bg-purple-100 px-6 py-4 md:translate-x-20 rounded-3xl" >
         <div class="mr-6 flex h-14 w-14 flex-none items-center justify-center rounded-3xl bg-white">
           <p class="text-sm font-bold sm:text-xl">4</p>
         </div>
@@ -176,13 +194,14 @@ permalink: '/'
   <div class="mx-auto w-full max-w-5xl px-5 py-16 md:px-10 md:py-20">
     <!-- Heading -->
     <div class="mx-auto mb-6 flex max-w-3xl flex-col text-center md:mb-10 lg:mb-12">
-      <h2 class="text-3xl font-bold md:text-5xl"> Our users <span style="color: var(--accent-2);" class="goofy-text">love</span> edutie!
+      <h2 class="text-3xl font-bold md:text-5xl" data-aos="fade-up"> 
+        Our users <span style="color: var(--accent-2);" class="goofy-text">love</span> edutie!
       </h2>
     </div>
     <!-- Contents -->
     <div class="grid grid-cols-1 gap-8 sm:gap-20 lg:grid-cols-2">
       <!-- Content 1 -->
-      <div>
+      <div data-aos="fade-up" data-aos-delay="100">
         <div class="mb-12 mt-4 flex w-full items-center justify-center gap-4">
           <img src="assets/svgs/smile.svg" alt="" class="w-20" />
           <div class="flex gap-1">
@@ -200,7 +219,7 @@ permalink: '/'
         </div>
       </div>
       <!-- Content 2 -->
-      <div>
+      <div data-aos="fade-up" data-aos-delay="100">
         <div class="mb-12 mt-4 flex w-full items-center justify-center gap-4">
           <img src="assets/svgs/happy.svg" alt="" class="w-20" />
           <div class="flex gap-1">
@@ -228,9 +247,9 @@ permalink: '/'
   <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
     <!-- Heading -->
     <div class="mx-auto mb-6 flex max-w-3xl flex-col text-center md:mb-10 lg:mb-12">
-      <h2 class="text-3xl font-bold md:text-5xl"> Why <span style="color: var(--primary);"
+      <h2 class="text-3xl font-bold md:text-5xl" data-aos="fade-up"> Why <span style="color: var(--primary);"
           class="goofy-text">edutie</span>?</h2>
-      <p class="mx-auto mb-8 mt-4 max-w-lg text-center text-sm text-gray-700 sm:text-base md:mb-12 lg:mb-16">
+      <p class="mx-auto mb-8 mt-4 max-w-lg text-center text-sm text-gray-700 sm:text-base md:mb-12 lg:mb-16" data-aos="fade-up" data-aos-delay="100">
         Edutie sets a new standard in education by offering unique personalization and active knowledge building. It's learning tailored to you—effective and inspiring.
       </p>
     </div>
@@ -264,8 +283,7 @@ permalink: '/'
 
       <div class="h-[80px] grid grid-cols-2 lg:grid-cols-5 rounded-3xl bg-purple-100 gap-4">
       <div class="text-xl grid place-items-center max-md:font-semibold">Costs</div>
-      <div class="grid place-items-center"><span>Completely <span
-          style="color: var(--accent-2); font-weight: 600;">free</span></span></div>
+      <div class="grid place-items-center"><span style="color: var(--accent-2); font-weight: 600;">Free</span></div>
       <div class="grid place-items-center hidden lg:grid">Your time (and ads)</div>
       <div class="grid place-items-center hidden lg:grid">60-120 PLN / hour</div>
       <div class="grid place-items-center hidden lg:grid">Cost of books</div>
@@ -294,10 +312,10 @@ permalink: '/'
     <!-- Component -->
     <div class="mx-auto max-w-3xl text-center">
       <!-- Title -->
-      <h2 class="mb-4 text-3xl font-bold md:text-5xl">Time to <span class="goofy-text"
+      <h2 class="mb-4 text-3xl font-bold md:text-5xl" data-aos="fade-up" >Time to <span class="goofy-text"
           style="color: var(--primary);">learn.</span></h2>
-      <p class="mx-auto mb-6 max-w-xl text-sm text-gray-700 sm:text-base md:mb-12">
-        Załóż konto i rozpocznij swoją podróż do efektywnej nauki z Edutie - rozwijaj się razem z nami!
+      <p class="mx-auto mb-6 max-w-xl text-sm text-gray-700 sm:text-base md:mb-12" data-aos="fade-up" data-aos-delay="100">
+        Create an account and start your journey to effective learning with Edutie - grow with us!
       </p>
       <!-- Form -->
       <div class="mx-auto mb-4 flex max-w-xl justify-center">
