@@ -1,11 +1,9 @@
 {
-	"name": "Nowa Nauka",
-	"email": "tutaj@nowanauka.pl",
-	"phoneForTel": "+48731001247",
-	"phoneFormatted": "+48 731 001 247",
+	"name": "Edutie Learning",
+	"email": "here@edutielearning.com",
 	"address": {
 		"city": "Warsaw",
 		"mapLink": "https://www.google.com/maps/place/Warsaw"
 	},
-	"domain": "edutie.nowanauka.pl"
+	"domain": "edutielearning.com"
 }

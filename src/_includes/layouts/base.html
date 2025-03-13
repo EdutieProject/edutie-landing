@@ -87,15 +87,9 @@
         About Page - About us | Painters and Co.
         -->
   <title>
-    {% if page.url == '/'%}
     {{ title }}
     |
     {{ client.name }}
-    {% else %}
-    {{ title }}
-    |
-    {{ client.name }}
-    {% endif %}
   </title>
 </head>
 
